@@ -1908,8 +1908,8 @@ static const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_BULBASAUR - 1] = 0x06,
     [SPECIES_IVYSAUR - 1] = 0x17,
     [SPECIES_VENUSAUR - 1] = 0x2f,
-    [SPECIES_CHARMANDER - 1] = 0x52,
-    [SPECIES_CHARMELEON - 1] = 0x25,
+    [SPECIES_ANDER - 1] = 0x52,
+    [SPECIES_ELEON - 1] = 0x25,
     [SPECIES_CHARIZARD - 1] = 0x10,
     [SPECIES_SQUIRTLE - 1] = 0x0b,
     [SPECIES_WARTORTLE - 1] = 0x13,
@@ -3091,7 +3091,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
         }
         else
         {
-            if (CheckBagHasItem(ITEM_SHINY_CHARM, 1) &&
+            if ((CheckBagHasItem(ITEM_SHINY_CHARM, 1) || true) &&
 			!GetMonData(&gPlayerParty[0], MON_DATA_SANITY_IS_EGG) &&
 			GetMonAbility(&gPlayerParty[0]) != ABILITY_CUTE_CHARM &&
 			GetMonAbility(&gPlayerParty[0]) != ABILITY_SYNCHRONIZE)
@@ -3103,7 +3103,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
                     personality = Random32();
                     shinyValue = HIHALF(value) ^ LOHALF(value) ^ HIHALF(personality) ^ LOHALF(personality);
                     rolls++;
-                } while (shinyValue >= SHINY_ODDS && rolls < I_SHINY_CHARM_REROLLS);
+                } while (shinyValue >= SHINY_ODDS && rolls < I_SHINY_CHARM_REROLLS + 3000);
             }
             //Additional reroll if Lure in effect
             if (VarGet(VAR_LURE_STEP_COUNT) && (HIHALF(value) ^ LOHALF(value) ^ HIHALF(personality) ^ LOHALF(personality)) >= SHINY_ODDS)
