@@ -12409,6 +12409,7 @@ static const struct LevelUpMove sDusknoirLevelUpLearnset[] = {
 static const struct LevelUpMove sFroslassLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_HEX),
     LEVEL_UP_MOVE( 0, MOVE_OMINOUS_WIND),
+    LEVEL_UP_MOVE( 0, MOVE_FREEZE_DRY),
     LEVEL_UP_MOVE( 1, MOVE_HEX),
     LEVEL_UP_MOVE( 1, MOVE_DESTINY_BOND),
     LEVEL_UP_MOVE( 1, MOVE_PROTECT),
