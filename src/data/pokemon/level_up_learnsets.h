@@ -14492,6 +14492,7 @@ static const struct LevelUpMove sGarbodorLevelUpLearnset[] = {
 static const struct LevelUpMove sZoruaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 0, MOVE_HYPER_VOICE),
+    LEVEL_UP_MOVE( 0, MOVE_HEX),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 5, MOVE_PURSUIT),
     LEVEL_UP_MOVE( 8, MOVE_HONE_CLAWS),
@@ -14515,6 +14516,7 @@ static const struct LevelUpMove sZoruaLevelUpLearnset[] = {
 static const struct LevelUpMove sZoroarkLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_NIGHT_SLASH),
     LEVEL_UP_MOVE( 0, MOVE_HYPER_VOICE),
+    LEVEL_UP_MOVE( 0, MOVE_HEX),
     LEVEL_UP_MOVE( 1, MOVE_NIGHT_SLASH),
     LEVEL_UP_MOVE( 1, MOVE_U_TURN),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
