@@ -7163,9 +7163,9 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_DARK_VOID] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_7
-            .accuracy = 50,
+            .accuracy = 85,
         #else
-            .accuracy = 80,
+            .accuracy = 85,
         #endif
         .effect = EFFECT_SLEEP,
         .power = 0,
@@ -12533,6 +12533,36 @@ const struct SignatureMove gSignatureMoveList[NUM_SPECIES] = {
         .chance = 20,
         .modification2 = SIGNATURE_MOD_PSS_CHANGE,
         .variable2 = SPLIT_HIGHEST,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+    [SPECIES_ZOROARK] =
+    {
+        .move = MOVE_HEX,
+        .modification = SIGNATURE_MOD_SECONDARY_EFFECT,
+        .variable = SIGNATURE_SECONDARY_EFFECT_FREEZE,
+        .chance = 20,
+        .modification2 = SIGNATURE_MOD_PSS_CHANGE,
+        .variable2 = SPLIT_HIGHEST,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+    [SPECIES_CHANDELURE] =
+    {
+        .move = MOVE_HEX,
+        .modification = SIGNATURE_MOD_SECONDARY_EFFECT,
+        .variable = SIGNATURE_SECONDARY_EFFECT_BURN,
+        .chance = 33,
+        .modification2 = SIGNATURE_MOD_PSS_CHANGE,
+        .variable2 = SPLIT_HIGHEST,
+        .differentDescription = FALSE,
+        .description = _("Default Description"),
+    },
+    [SPECIES_MIMIKYU] =
+    {
+        .move = MOVE_DRAINING_KISS,
+        .modification = SIGNATURE_MOD_PSS_CHANGE,
+        .variable = SPLIT_HIGHEST,
         .differentDescription = FALSE,
         .description = _("Default Description"),
     },
