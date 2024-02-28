@@ -13346,10 +13346,10 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_FROSLASS] =
     {
         .baseHP        = 70,
-        .baseAttack    = 80,
+        .baseAttack    = 60,
         .baseDefense   = 70,
-        .baseSpeed     = 110,
-        .baseSpAttack  = 80,
+        .baseSpeed     = 125,
+        .baseSpAttack  = 130,
         .baseSpDefense = 70,
         .type1 = TYPE_ICE,
         .type2 = TYPE_GHOST,
@@ -13696,12 +13696,12 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_DARKRAI] =
     {
-        .baseHP        = 70,
+        .baseHP        = 90,
         .baseAttack    = 90,
-        .baseDefense   = 90,
-        .baseSpeed     = 125,
-        .baseSpAttack  = 135,
-        .baseSpDefense = 90,
+        .baseDefense   = 95,
+        .baseSpeed     = 115,
+        .baseSpAttack  = 115,
+        .baseSpDefense = 95,
         .type1 = TYPE_DARK,
         .type2 = TYPE_DARK,
         .catchRate = 3,
@@ -16028,7 +16028,7 @@ const struct BaseStats gBaseStats[] =
         .catchRate = 75,
         .expYield = 66,
         .evYield_SpAttack  = 1,
-        .genderRatio = PERCENT_FEMALE(12.5),
+        .genderRatio = MON_FEMALE,
         .eggCycles = 25,
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_SLOW,
@@ -16046,13 +16046,13 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_ZOROARK] =
     {
         .baseHP        = 60,
-        .baseAttack    = 105,
-        .baseDefense   = 60,
-        .baseSpeed     = 105,
+        .baseAttack    = 80,
+        .baseDefense   = 65,
+        .baseSpeed     = 115,
         .baseSpAttack  = 120,
-        .baseSpDefense = 60,
-        .type1 = TYPE_DARK,
-        .type2 = TYPE_DARK,
+        .baseSpDefense = 65,
+        .type1 = TYPE_NORMAL,
+        .type2 = TYPE_GHOST,
         .catchRate = 45,
         .expYield = 179,
         .evYield_SpAttack  = 2,
@@ -17134,7 +17134,7 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_CHANDELURE] =
     {
-        .baseHP        = 60,
+        .baseHP        = 70,
         .baseAttack    = 55,
         .baseDefense   = 90,
         .baseSpeed     = 80,
@@ -21948,7 +21948,7 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_MIMIKYU] =
     {
-        .baseHP        = 55,
+        .baseHP        = 75,
         .baseAttack    = 90,
         .baseDefense   = 80,
         .baseSpeed     = 96,
